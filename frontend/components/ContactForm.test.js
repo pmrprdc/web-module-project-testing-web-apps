@@ -12,10 +12,12 @@ test('renders without errors', () => {
  test('renders the contact form header', () => {
     render(<ContactForm/>)   
 
-    const headerElement = screen.queryByText(/Contact Form/i);
-    console.log(headerElement)
-    expect(headerElement).toBeInTheDocument();
+    const headerElement = screen.queryByText(/Contact form/i);
+    expect(headerElement).toBeInTheDocument;
+    expect(headerElement).toBeTruthy();
+    expect(headerElement).toHaveTextContent(/contact form/i)
     
+
 
  });
 
