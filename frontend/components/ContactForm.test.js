@@ -136,7 +136,7 @@ test('renders all fields text when all fields are submitted.', async () => {
         const firstnameDisplay = screen.queryByText("James");
         const lastnameDisplay = screen.queryByText("Bond");
         const emailDisplay = screen.queryByText("jbond@bloomtech.com")
-        const messageDisplay = screen.queryByTestId("messageDisplay")
+        const messageDisplay = screen.queryByText("this message will erase in 10 seconds")
         
 
         expect(firstnameDisplay).toBeInTheDocument();
